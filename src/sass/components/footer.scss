@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 10px;
+  padding: 40px 0 35px;
+  background-color: #e6e6e6;
+
+  &__top {
+    margin-bottom: 50px;
+
+    @include clearfix;
+  }
+
+  &__tel {
+    margin-bottom: 10px;
+    color: #666666;
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  &__mail {
+    color: #ff9907;
+    text-decoration: none;
+    font-weight: 400;
+  }
+}
+
+.copywrite {
+  max-width: 700px;
+  margin: 0;
+  margin-top: 60px;
+  color: #808080;
+  font-size: 14px;
+  line-height: 20px;
+}
