@@ -280,3 +280,31 @@ textarea {
   padding: 20px 30px;
   resize: none;
 }
+
+.video {
+  display: block;
+  margin: 0 auto;
+  color: #FF9907;
+  font-size: 18px;
+  width: 300px;
+  padding-bottom: 150px;
+  position: relative;
+  margin-bottom: 10px;
+
+  &::after {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-image: url("../img/play.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
