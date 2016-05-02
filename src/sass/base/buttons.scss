@@ -1,8 +1,7 @@
 .btn {
   display: inline-block;
   box-sizing: border-box;
-  margin: 0 10px;
-  padding: 13px 35px;
+  padding: 15px 45px;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -11,28 +10,14 @@
   text-align: center;
   vertical-align: top;
   text-decoration: none;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
 
-  &--ico {
-    padding: 0;
-    background-color: transparent;
-    font-size: 0;
-
-    &:hover,
-    &--hover {
-      padding: 0;
-      background-color: transparent;
-      opacity: 0.7;
-    }
-
-    &:active,
-    &--active {
-      padding: 0;
-      background-color: transparent;
-      opacity: 1;
-    }
+  &--default {
+    border-radius: 4px;
+    background: #2ca84a;
+    box-shadow: 0 0 0 5px #b0e2bc;
+    color: #ffffff;
+    font-weight: 600;
   }
 }
