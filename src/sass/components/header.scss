@@ -1,0 +1,51 @@
+.header {
+  padding: 40px 0;
+
+  @include clearfix;
+}
+
+.logo {
+  float: left;
+  width: 142px;
+  height: 36px;
+
+  img {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.menu {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 60px;
+    vertical-align: top;
+    font-size: 14px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: #808080;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
