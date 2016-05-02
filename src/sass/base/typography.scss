@@ -2,80 +2,7 @@
   Базовая типография
 =====================*/
 
-@font-face {
-  font-family: "futura-heavy";
-  font-weight: 900;
-  font-style: normal;
-
-  src: local("futura-heavy"), local("FuturaNewHeavy-Reg"),
-  url("../font/subset-FuturaNewHeavy-Reg.woff2") format("woff2"),
-  url("../font/subset-FuturaNewHeavy-Reg.woff") format("woff"),
-  url("../font/subset-FuturaNewHeavy-Reg.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "ptserif-demi";
-  font-weight: normal;
-  font-style: normal;
-
-  src: local("ptserif-demi"), local("PTSerifPro-Demi"),
-  url("../font/subset-PTSerifPro-Demi.woff2") format("woff2"),
-  url("../font/subset-PTSerifPro-Demi.woff") format("woff"),
-  url("../font/subset-PTSerifPro-Demi.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "futura-demi";
-  font-weight: normal;
-  font-style: normal;
-
-  src: local("futura-demi"), local("FuturaNewDemi-Reg"),
-  url("../font/subset-FuturaNewDemi-Reg.woff2") format("woff2"),
-  url("../font/subset-FuturaNewDemi-Reg.woff") format("woff"),
-  url("../font/subset-FuturaNewDemi-Reg.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "futura-medium";
-  font-weight: 500;
-  font-style: normal;
-
-  src: local("futura-medium"), local("FuturaNewMedium-Reg"),
-  url("../font/subset-FuturaNewMedium-Reg.woff2") format("woff2"),
-  url("../font/subset-FuturaNewMedium-Reg.woff") format("woff"),
-  url("../font/subset-FuturaNewMedium-Reg.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "futura";
-  font-weight: normal;
-  font-style: normal;
-
-  src: local("futura"), local("FuturaNewBook-Reg"),
-  url("../font/subset-FuturaNewBook-Reg.woff2") format("woff2"),
-  url("../font/subset-FuturaNewBook-Reg.woff") format("woff"),
-  url("../font/subset-FuturaNewBook-Reg.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "ptserif";
-  font-weight: normal;
-  font-style: normal;
-
-  src: local("ptserif"), local("PTSerifPro-Narrow"),
-  url("../font/subset-PTSerifPro-Narrow.woff2") format("woff2"),
-  url("../font/subset-PTSerifPro-Narrow.woff") format("woff"),
-  url("../font/subset-PTSerifPro-Narrow.ttf") format("truetype");
-}
-
-$base-font: "futura", Arial, sans-serif;
-$secondary-font: "ptserif", "Times New Roman", Times, serif;
-$futura: "futura", Arial, sans-serif;
-$futura-medium: "futura-medium", Arial, sans-serif;
-$futura-demi: "futura-demi", Arial, sans-serif;
-$futura-heavy: "futura-heavy", Arial, sans-serif;
-$ptserif-demi: "ptserif-demi", "Times New Roman", Times, serif;
-
+$base-font: "Open Sans", Arial, sans-serif;
 
 body {
   font-family: $base-font;
@@ -86,40 +13,4 @@ body {
 strong,
 b {
   font-weight: 600;
-}
-
-.text-green {
-  color: $green!important;
-}
-
-.text-yellow {
-  color: $yellow!important;
-}
-
-.text-red {
-  color: $red!important;
-}
-
-h1 {
-  font-family: $futura-heavy;
-  font-size: 32px;
-  line-height: 40px;
-}
-
-h2 {
-  font-family: $futura-heavy;
-  font-size: 25px;
-  line-height: 30px;
-}
-
-h3 {
-  font-family: $futura-heavy;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-p {
-  font-family: $ptserif-demi;
-  font-size: 18px;
-  line-height: 24px;
 }
