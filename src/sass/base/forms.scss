@@ -1,0 +1,31 @@
+input[type='text'],
+textarea,
+select,
+input[type='password']{ /* поля */
+  box-sizing: border-box;
+  outline: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $base-font;
+
+  &:focus{
+
+  }
+}
+
+label{
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+  outline: none;
+}
+
+input::-webkit-input-placeholder{
+
+}
+
+input::-moz-placeholder{
+
+}
