@@ -3,6 +3,10 @@
   padding: 40px 0 35px;
   background-color: #e6e6e6;
 
+  @media (max-width: 768px){
+    text-align: center;
+  }
+
   &__top {
     margin-bottom: 50px;
 

@@ -11,8 +11,8 @@
     background-position: -65px -10px;
 
     @media (max-width: 960px) {
-      background-size: 600px;
       background-position: -65px 45px;
+      background-size: 600px;
     }
 
     @media (max-width: 768px) {
@@ -88,8 +88,8 @@
   padding: 80px 0 70px;
 
   @media (max-width: 768px) {
-    padding: 40px 15px;
     box-sizing: border-box;
+    padding: 40px 15px;
   }
 
   p {
@@ -114,9 +114,9 @@
       }
 
       @media (max-width: 768px) {
+        margin: 40px 0;
         font-size: 16px;
         line-height: 24px;
-        margin: 40px 0;
       }
     }
   }
@@ -132,7 +132,7 @@ hr {
 }
 
 .section {
-  margin-bottom: 110px;
+  margin-bottom: 60px;
   text-align: center;
 
   &__title {
@@ -145,10 +145,10 @@ hr {
     line-height: 60px;
 
     @media (max-width: 768px) {
-      font-size: 24px;
-      line-height: 34px;
       margin: 40px 0 20px;
       padding-bottom: 50px;
+      font-size: 24px;
+      line-height: 34px;
     }
 
     &::after {
@@ -175,6 +175,11 @@ hr {
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -215,8 +220,8 @@ hr {
 
   &__name {
     color: #000000;
-    font-weight: 600;
     font-size: 14px;
+    font-weight: 600;
 
     span {
       display: block;
@@ -241,6 +246,7 @@ hr {
 
     @media (max-width: 768px) {
       float: none;
+      padding: 15px 15px 0;
       text-align: left;
     }
 
@@ -250,7 +256,7 @@ hr {
 
       @media (max-width: 768px) {
         width: 100%;
-        background: #C1C1C1;
+        background: #e2e2e2;
       }
     }
 
@@ -260,7 +266,7 @@ hr {
 
       @media (max-width: 768px) {
         width: 100%;
-        background: #B8D8BF;
+        background: #dae2dc;
       }
     }
 
@@ -270,7 +276,7 @@ hr {
 
       @media (max-width: 768px) {
         width: 100%;
-        background: #FFE9CC;
+        background: #fff6eb;
       }
     }
   }
@@ -283,6 +289,12 @@ hr {
 
     @media (max-width: 960px) {
       font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
     }
   }
 
@@ -317,8 +329,21 @@ hr {
     padding: 140px 25px 20px 25px;
   }
 
+  @media (max-width: 768px) {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
   &--1 {
     background-image: url("../img/step-1.png");
+
+    @media (max-width: 768px) {
+      background-size: 60px;
+      background-position: 60px 10px;
+    }
   }
 
   &--2 {
@@ -329,16 +354,34 @@ hr {
     @media (max-width: 1024px) {
       margin: 0 40px;
     }
+
+    @media (max-width: 768px) {
+      margin: 0;
+      margin-bottom: 20px;
+      background-position: 70px 20px;
+    }
   }
 
   &--3 {
     background-image: url("../img/step-3.png");
+
+    @media (max-width: 768px) {
+      background-size: 60px;
+      background-position: 60px 10px;
+    }
   }
 
   &__title {
     margin-bottom: 20px;
     color: #2ba64a;
     font-size: 24px;
+
+    @media (max-width: 768px){
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding-left: 50px;
+      margin-top: 10px;
+    }
   }
 
   p {
@@ -358,6 +401,10 @@ hr {
   margin-bottom: 60px;
 
   @include clearfix;
+
+  @media (max-width: 768px){
+    margin-bottom: 0;
+  }
 }
 
 .form-col {
@@ -391,6 +438,11 @@ textarea {
   color: #444444;
   font-size: 18px;
   font-weight: 400;
+
+  @media (max-width: 768px){
+    margin-bottom: 20px;
+    height: 50px;
+  }
 }
 
 textarea {
@@ -400,26 +452,26 @@ textarea {
 }
 
 .video {
-  display: block;
-  margin: 0 auto;
-  color: #FF9907;
-  font-size: 18px;
-  width: 300px;
-  padding-bottom: 150px;
   position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
   margin-bottom: 10px;
+  padding-bottom: 150px;
+  color: #ff9907;
+  font-size: 18px;
 
   &::after {
     position: absolute;
+    bottom: 0;
+    left: 50%;
     width: 82px;
     height: 82px;
-    content: "";
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
     background-image: url("../img/play.png");
     background-repeat: no-repeat;
     background-position: center;
+    content: "";
+    transform: translateX(-50%);
   }
 
   &:hover {
