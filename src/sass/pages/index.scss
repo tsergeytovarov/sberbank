@@ -22,6 +22,25 @@
     }
   }
 
+  &--video {
+    min-height: 520px;
+  }
+
+  &--video .container {
+    background-position: -65px -40px;
+  }
+
+  &--video &__content {
+    text-align: center;
+  }
+
+  &--video &__title {
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   &__content {
     padding-left: 50%;
 
