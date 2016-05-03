@@ -63,6 +63,11 @@
     font-size: 14px;
     line-height: 14px;
 
+    &--red {
+      color: #FF9907;
+      text-decoration: underline;
+    }
+
     &:hover {
       color: #2CA84A;
     }

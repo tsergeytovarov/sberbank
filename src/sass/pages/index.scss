@@ -154,6 +154,14 @@ hr {
   margin-bottom: 60px;
   text-align: center;
 
+  &--single {
+    padding-top: 60px;
+
+    @media (max-width: 768px) {
+      padding-top: 30px;
+    }
+  }
+
   &__title {
     position: relative;
     margin: 0;
@@ -423,6 +431,24 @@ hr {
 
   @media (max-width: 768px){
     margin-bottom: 0;
+  }
+
+  &--single .form-col {
+    width: 360px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &--single .form-col {
+    &:last-child {
+      width: 360px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
   }
 }
 
