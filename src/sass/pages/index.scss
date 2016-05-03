@@ -162,6 +162,24 @@ hr {
     }
   }
 
+  &--good {
+    padding-top: 200px;
+    background: url("../img/good.png") no-repeat center 70px;
+
+    @media (max-width: 768px) {
+      padding-top: 200px;
+    }
+  }
+
+  &--bad {
+    padding-top: 200px;
+    background: url("../img/bad.png") no-repeat center 70px;
+
+    @media (max-width: 768px) {
+      padding-top: 200px;
+    }
+  }
+
   &__title {
     position: relative;
     margin: 0;
