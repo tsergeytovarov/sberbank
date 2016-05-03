@@ -2,6 +2,8 @@
   padding: 40px 0 35px;
   background-color: #e6e6e6;
 
+  @include clearfix;
+
   @media (max-width: 768px){
     text-align: center;
   }
@@ -24,6 +26,15 @@
     text-decoration: none;
     font-weight: 400;
   }
+
+  &__left {
+    float: left;
+    width: 310px;
+
+    @media (max-width: 768px){
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .copywrite {
@@ -39,8 +50,10 @@
     float: right;
     max-width: 680px;
 
-    @media (max-width: 768px) {
-      margin-bottom: 40px;
+    @media (max-width: 1024px){
+      float: none;
+      clear: both;
+      padding-top: 20px;
     }
   }
 }
