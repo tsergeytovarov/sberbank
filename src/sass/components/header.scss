@@ -12,6 +12,12 @@
   width: 142px;
   height: 36px;
 
+  @media (max-width: 768px) {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
   img {
     display: block;
   }
@@ -23,6 +29,10 @@
 
 .menu {
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   &__list {
     margin: 0;
