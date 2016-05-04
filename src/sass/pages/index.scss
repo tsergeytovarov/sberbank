@@ -23,11 +23,12 @@
   }
 
   &--video {
-    min-height: calc(100vh - 116px - 164px);
+    min-height: calc(100vh - 116px - 154px);
   }
 
   &--video .container {
     background-position: -65px -40px;
+    box-sizing: border-box;
   }
 
   &--video &__content {
@@ -158,7 +159,7 @@ hr {
   &--single {
     padding-top: 60px;
     box-sizing: border-box;
-    min-height: calc(100vh - 116px - 164px);
+    min-height: calc(100vh - 116px - 154px);
 
     @media (max-width: 768px) {
       padding-top: 30px;
